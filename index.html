@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check result</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h1 id="show"></h1>
+    
+    
+    <script>
+        const marks = prompt('Enter your mark here (0 - 100):');
+        const show = document.getElementById('show');
+        
+        if(marks <= 100 && marks >= 80){
+            show.innerHTML = 'You got A+';
+        }
+        else if(marks <= 79 && marks >= 70){
+            show.innerHTML = 'You got A';
+        }
+        else if(marks <= 69 && marks >= 60){
+            show.innerHTML = 'You got A-';
+        }
+        else if(marks <= 59 && marks >= 50){
+            show.innerHTML = 'You got B';
+        }
+        else if(marks <= 49 && marks >= 40){
+            show.innerHTML = 'You got C';
+        }
+        else if(marks <= 39 && marks >= 33){
+            show.innerHTML = 'You got D';
+        }
+        else if(marks < 33){
+            show.innerHTML = 'You are Fail!!';
+        }
+        else{
+            show.innerHTML = 'Please enter a marks between 0 to 100';
+        }
+    </script>
+    
+</body>
+</html>
